@@ -1,0 +1,461 @@
+﻿body {
+    overflow:hidden;
+    margin:0px;
+}
+
+form {
+    margin:0px;
+    border:0px;
+}
+
+div {
+    POSITION: absolute;
+    margin:0px;
+}
+
+iframe {
+    POSITION: absolute;
+    margin:0px;
+    border:0px;
+}
+
+p {
+    POSITION: absolute;
+    margin:0px;
+    COLOR: black;
+    text-align:center;
+}
+
+input {
+    margin:0px;
+    border:0px;
+}
+
+img {
+    POSITION: absolute;
+    margin:0px;
+}
+
+table {
+    text-align:center;
+    margin:0;
+}
+
+tr {
+    height:30px;
+}
+
+td {
+    font-size:12pt;
+    font-family:仿宋_GB2312,Times New Roman;
+    margin:0;
+}
+
+.Menu {
+    HEIGHT: 42px;
+    WIDTH: 152px;
+    border-left:2px solid #000;
+    border-right:2px solid #000;
+}
+
+.MenuText {
+    LEFT: 30px; 
+    TOP: 10px;
+    FONT-SIZE: 18pt;
+    FONT-FAMILY: 楷体_GB2312;
+    z-index:1;
+}
+
+.pTextKT
+{
+    FONT-FAMILY: 楷体_GB2312,'Times New Roman';
+}
+
+.pTitle
+{
+    TOP: 6px;
+    FONT-SIZE: 14pt;
+    FONT-FAMILY: 楷体_GB2312;
+    font-weight:bold;
+}
+
+.CheckRepeat{
+    width:22px;
+    height:22px;
+}
+.PieceTop
+{
+    border-radius:10px 10px 0px 0px;
+    background-color:#94D0F4;
+    height: 30px;
+}
+
+.PieceBottom {
+    border-radius:0px 0px 10px 10px;
+    background: linear-gradient(#E0E6E6, #F2F8F8);
+}
+
+.PieButton {
+    width:60px;
+    height:60px;
+    border-radius:30px;
+    background-color:#415594;
+}
+
+.PieMax {
+    width:160px;
+    height:160px;
+    border-radius:80px;
+    z-index:2;
+}
+
+.PieMin {
+    width:140px;
+    height:140px;
+    border-radius:70px;
+    z-index:3;
+}
+
+.ButtonText {
+    width:60px;
+    height:60px;
+    top:22px;
+    color:white;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: 楷体_GB2312;
+    font-weight:bold;
+}
+
+.PieceAll {
+    border-radius:10px 10px 10px 10px;
+    background: linear-gradient(#E0E6E6, #F2F8F8);
+}
+
+.Middle {
+    HEIGHT: 598px; 
+    WIDTH: 1280px; 
+    LEFT: 0px; 
+    TOP: 0px;
+}
+
+.MiddleFrame{
+    HEIGHT: 598px; 
+    WIDTH: 1280px; 
+}
+
+.AILarge{
+    HEIGHT: 520px; 
+    WIDTH: 542px; 
+}
+
+.MagnetHeadM{
+    height: 18px; 
+    width: 12px; 
+    z-index: 2;
+}
+
+.MagnetPieceM{
+    height: 22px; 
+    width: 3px; 
+    z-index: 2;
+}
+
+.MagnetPieceL{
+    height: 50px; 
+    width: 6px; 
+    z-index: 2;
+}
+
+.MagnetHeadL{
+    height: 42px; 
+    width: 27px; 
+    z-index: 2;
+}
+
+.MagnetLine{
+    width: 530px;
+    height:190px;
+    z-index: 2;
+    top: 48px;
+    left: 50px;
+}
+
+.MagnetLineI{
+    width: 530px;
+    height:190px;
+}
+
+.MagnetLineY{
+    width: 530px;
+    height:190px;
+    z-index: 2;
+    top: 33px;
+    left: 25px;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: 楷体_GB2312;
+}
+
+.VedioM1 {
+    WIDTH: 200px;
+    HEIGHT: 165px;
+    left:15px;
+}
+
+.VedioM {
+    WIDTH: 200px;
+    HEIGHT: 150px;
+}
+
+.VedioButton {
+    WIDTH: 15px;
+    HEIGHT: 15px;
+    top: 150px;
+    z-index:9;
+}
+
+
+.MagnetLineX{
+    width: 530px;
+    height:190px;
+    z-index: 2;
+    top: 228px;
+    left: 585px;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: 楷体_GB2312;
+}
+
+.MagnetPie{
+    width: 240px;
+    height:200px;
+    z-index: 2;
+    top: 308px;
+    left:338px;
+}
+
+.MagnetPieI{
+    width: 250px;
+    height:202px;
+    border:0;
+}
+
+.MagnetPieX{
+    width: 240px;
+    height:200px;
+    top: 308px;
+    left:50px;
+}
+
+.WostLine1{
+    width: 640px;
+    height: 270px;
+}
+
+.WostLine1P{
+    width: 630px;
+    height: 270px;
+    top: 198px;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: 楷体_GB2312;
+    z-index: 2;
+}
+
+.WostLine2{
+    width: 420px;
+    height: 200px;
+    z-index: 2;
+    top: 65px;
+    left: 30px;
+}
+
+.WostLine2I{
+    width: 420px;
+    height: 200px;
+    z-index: 2;
+}
+
+.Condition{
+    border-radius:10px;
+    background-color:#94D0F4;
+    height: 95px;
+    border:2px solid #838383;
+}
+
+.ConditionText{
+    FONT-SIZE: 10pt;
+    Z-INDEX: 1;
+    FONT-FAMILY: 楷体_GB2312;
+    COLOR: black;
+    text-align:left;
+}
+
+.LVTable{
+    top:145px;
+    left:25px;
+    text-align:center;
+}
+
+.Login{
+    border-radius:10px;
+    background-color:#94D0F4;
+    height:150px;
+    width:390px;
+    left:445px;
+    top:380px;
+}
+
+.LoginText{
+    font-size:18pt;
+    font-family:仿宋_GB2312,Times New Roman;
+    left:30px;
+    width:100px;
+}
+
+.LoginImg {
+    height: 80px;
+    width:80px;
+    left:300px;
+    top:35px;
+}
+
+.LoginInp {
+    position:absolute;
+    height: 25px;
+    width:160px;
+    left:120px;
+}
+
+.AIObject {
+    position:static;
+	width: 50px;
+	height: 50px;
+	float:left;
+}
+.clear{
+	clear: both;
+}
+
+.SMenuItem {
+    position:static;
+	width: 150px;
+	height: 50px;
+	float:left;
+}
+
+.SMenuImg{
+    width:40px;
+    height:40px;
+    left:10px;
+    margin-top:5px;
+}
+
+.SMenuText{
+    font-size:18pt;
+    font-family:仿宋_GB2312,Times New Roman;
+    text-align:left;
+    left:60px;
+    width:100px;
+    margin-top:10px;
+}
+
+.SystemFrame{
+    HEIGHT: 598px; 
+    WIDTH: 1280px; 
+}
+
+.pOperate
+{
+    TOP: 8px;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: 楷体_GB2312;
+    font-weight:bold;
+    color:red;
+    width:100px;
+}
+
+.imgButton
+{
+    width:80px;
+    height:30px;
+}
+
+.DataList{
+    position:absolute;
+    width:200px;
+}
+
+.DataArea{
+    border-radius:10px;
+    background-color:#94D0F4;
+    border:2px solid #838383;
+}
+
+.DataTile{
+    text-align:right;
+    width:78px;
+    height:50px;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: 楷体_GB2312;
+}
+
+.DataText{
+    position:absolute;
+    height:22px;
+    width:120px;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: 楷体_GB2312;
+}
+
+.SelItems {
+    overflow:auto;
+    top:40px;
+    left:10px;
+}
+
+.SelItemC {
+    position:static;
+	width: 20px;
+	height: 20px;
+	float:left;
+    font-size:18pt;
+    font-family:仿宋_GB2312,Times New Roman;
+    text-align:left;
+    margin:0px 3px 0px 3px;
+}
+.SelItemP {
+    position:static;
+	width: 128px;
+	height: 25px;
+	float:left;
+    font-size:12pt;
+    font-family:仿宋_GB2312,Times New Roman;
+    text-align:left;
+    margin-top:3px;
+}
+
+.ConnectPara {
+    width:320px;
+    height:175px;
+    display:none;
+}
+
+.MoveList {
+    width:10px;
+    height:80px;
+}
+
+.PoinsName {
+    width:19px;
+    height:202px;
+    text-align:center;
+    color:white;
+    font-size:14pt;
+    font-family:仿宋_GB2312,Times New Roman;
+    background-color:#415594;
+    margin:1px 0px 0px 1px;
+    border-radius:10px 0px 0px 10px;
+}
+
+.PoinsVedio {
+    width:448px;
+    height:252px;
+}

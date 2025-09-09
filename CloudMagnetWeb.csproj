@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68B4DDB8-5761-427C-83D7-D8AED6FC6810}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>CloudMagnetWeb</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CloudMagnetWeb</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UseIISExpress>true</UseIISExpress>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.CAPICOM">
+      <Name>Interop.CAPICOM</Name>
+      <HintPath>bin\Interop.CAPICOM.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <Name>Microsoft.Web.UI.WebControls</Name>
+      <HintPath>..\Peccancy\bin\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <Name>MySql.Data</Name>
+      <HintPath>bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Equipment\Point.aspx.cs">
+      <DependentUpon>Point.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\PointHospital\PointShow.aspx.cs">
+      <DependentUpon>PointShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\PointShow\PointPersonLog.aspx.cs">
+      <DependentUpon>PointPersonLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\PointShow\PointShow.aspx.cs">
+      <DependentUpon>PointShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\PointShow\ShowPoint.aspx.cs">
+      <DependentUpon>ShowPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\PointShow\ShowPointEquipment.aspx.cs">
+      <DependentUpon>ShowPointEquipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\PointShow\ShowPointPerson.aspx.cs">
+      <DependentUpon>ShowPointPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\PointShow\ShowPointPhone.aspx.cs">
+      <DependentUpon>ShowPointPhone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\Result\MagnetResult.aspx.cs">
+      <DependentUpon>MagnetResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interface\InterDefine.aspx.cs">
+      <DependentUpon>InterDefine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\InterStat.aspx.cs">
+      <DependentUpon>InterStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\InterUser.aspx.cs">
+      <DependentUpon>InterUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginOut.aspx.cs">
+      <DependentUpon>LoginOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\BottomFrame.aspx.cs">
+      <DependentUpon>BottomFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\MainFrame.aspx.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\PriConfig.aspx.cs">
+      <DependentUpon>PriConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\SysMenu.aspx.cs">
+      <DependentUpon>SysMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\TopFrame.aspx.cs">
+      <DependentUpon>TopFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Permission\Employee.aspx.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Permission\Role.aspx.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ChooseItem.ascx.cs">
+      <DependentUpon>ChooseItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\CPublicFun.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\CPublicFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\MultiSelect.aspx.cs">
+      <DependentUpon>MultiSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\MysqlConnect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\OracleConnect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\RowItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\SelectDepartment.aspx.cs">
+      <DependentUpon>SelectDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\SelectEmployee.aspx.cs">
+      <DependentUpon>SelectEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\SelectPolice.aspx.cs">
+      <DependentUpon>SelectPolice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ShowImage.aspx.cs">
+      <DependentUpon>ShowImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\UCtrlDate.ascx.cs">
+      <DependentUpon>UCtrlDate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\WinOpenMain.aspx.cs">
+      <DependentUpon>WinOpenMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\XmlAddress.aspx.cs">
+      <DependentUpon>XmlAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\InterLog.aspx.cs">
+      <DependentUpon>InterLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\LoginLog.aspx.cs">
+      <DependentUpon>LoginLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\OperateLog.aspx.cs">
+      <DependentUpon>OperateLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\ClientServer.asmx.cs">
+      <DependentUpon>ClientServer.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\WebServer.asmx.cs">
+      <DependentUpon>WebServer.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\XmlServer.aspx.cs">
+      <DependentUpon>XmlServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stat\DataStat.aspx.cs">
+      <DependentUpon>DataStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Equipment\Point.aspx" />
+    <Content Include="Equipment\PointHospital\PointShow.aspx" />
+    <Content Include="Equipment\PointShow\PointPersonLog.aspx" />
+    <Content Include="Equipment\PointShow\PointShow.aspx" />
+    <Content Include="Equipment\PointShow\ShowPoint.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Equipment\PointShow\ShowPointEquipment.aspx" />
+    <Content Include="Equipment\PointShow\ShowPointPerson.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Equipment\PointShow\ShowPointPhone.aspx" />
+    <Content Include="Equipment\Result\MagnetResult.aspx" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Images\btsubmit.jpg" />
+    <Content Include="Images\Cancel.gif" />
+    <Content Include="Images\Commit.gif" />
+    <Content Include="Images\Delete.gif" />
+    <Content Include="Images\Down.gif" />
+    <Content Include="Images\first.jpg" />
+    <Content Include="Images\folder.gif" />
+    <Content Include="Images\folderopen.gif" />
+    <Content Include="Images\Left.gif" />
+    <Content Include="Images\LoginButton.jpg" />
+    <Content Include="Images\Modify.gif" />
+    <Content Include="Images\New.gif" />
+    <Content Include="Images\Ok.gif" />
+    <Content Include="Images\Police.jpg" />
+    <Content Include="Images\Reset.gif" />
+    <Content Include="Images\Right.gif" />
+    <Content Include="Images\Up.gif" />
+    <Content Include="Interface\InterDefine.aspx" />
+    <Content Include="Interface\InterStat.aspx" />
+    <Content Include="Interface\InterUser.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LoginOut.aspx" />
+    <Content Include="Main\BottomFrame.aspx" />
+    <Content Include="Main\Main.aspx" />
+    <Content Include="Main\MainFrame.aspx" />
+    <Content Include="Main\PriConfig.aspx" />
+    <Content Include="Main\SysMenu.aspx" />
+    <Content Include="Main\TopFrame.aspx" />
+    <Content Include="Normal.css" />
+    <Content Include="Permission\Employee.aspx" />
+    <Content Include="Permission\Role.aspx" />
+    <Content Include="Public\ChooseItem.ascx" />
+    <Content Include="Public\Function.js" />
+    <Content Include="Public\MultiSelect.aspx" />
+    <Content Include="Public\SelectDepartment.aspx" />
+    <Content Include="Public\SelectEmployee.aspx" />
+    <Content Include="Public\SelectPolice.aspx" />
+    <Content Include="Public\ShowImage.aspx" />
+    <Content Include="Public\UCtrlDate.ascx" />
+    <Content Include="Public\WinOpenMain.aspx" />
+    <Content Include="Public\XmlAddress.aspx" />
+    <Content Include="Security\InterLog.aspx" />
+    <Content Include="Security\LoginLog.aspx" />
+    <Content Include="Security\OperateLog.aspx" />
+    <Content Include="Services\ClientServer.asmx" />
+    <Content Include="Services\WebServer.asmx" />
+    <Content Include="Services\XmlServer.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Stat\DataStat.aspx" />
+    <Content Include="Web.config" />
+    <EmbeddedResource Include="Equipment\Point.aspx.resx">
+      <DependentUpon>Point.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\PointHospital\PointShow.aspx.resx">
+      <DependentUpon>PointShow.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\PointShow\PointPersonLog.aspx.resx">
+      <DependentUpon>PointPersonLog.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\PointShow\PointShow.aspx.resx">
+      <DependentUpon>PointShow.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\PointShow\ShowPoint.aspx.resx">
+      <DependentUpon>ShowPoint.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\PointShow\ShowPointEquipment.aspx.resx">
+      <DependentUpon>ShowPointEquipment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\PointShow\ShowPointPerson.aspx.resx">
+      <DependentUpon>ShowPointPerson.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\PointShow\ShowPointPhone.aspx.resx">
+      <DependentUpon>ShowPointPhone.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment\Result\MagnetResult.aspx.resx">
+      <DependentUpon>MagnetResult.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\InterDefine.aspx.resx">
+      <DependentUpon>InterDefine.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\InterStat.aspx.resx">
+      <DependentUpon>InterStat.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\InterUser.aspx.resx">
+      <DependentUpon>InterUser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginOut.aspx.resx">
+      <DependentUpon>LoginOut.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\BottomFrame.aspx.resx">
+      <DependentUpon>BottomFrame.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Main.aspx.resx">
+      <DependentUpon>Main.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainFrame.aspx.resx">
+      <DependentUpon>MainFrame.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\PriConfig.aspx.resx">
+      <DependentUpon>PriConfig.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SysMenu.aspx.resx">
+      <DependentUpon>SysMenu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\TopFrame.aspx.resx">
+      <DependentUpon>TopFrame.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permission\Employee.aspx.resx">
+      <DependentUpon>Employee.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permission\Role.aspx.resx">
+      <DependentUpon>Role.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ChooseItem.ascx.resx">
+      <DependentUpon>ChooseItem.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\MultiSelect.aspx.resx">
+      <DependentUpon>MultiSelect.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\SelectDepartment.aspx.resx">
+      <DependentUpon>SelectDepartment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\SelectEmployee.aspx.resx">
+      <DependentUpon>SelectEmployee.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\SelectPolice.aspx.resx">
+      <DependentUpon>SelectPolice.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ShowImage.aspx.resx">
+      <DependentUpon>ShowImage.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\UCtrlDate.ascx.resx">
+      <DependentUpon>UCtrlDate.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\XmlAddress.aspx.resx">
+      <DependentUpon>XmlAddress.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\InterLog.aspx.resx">
+      <DependentUpon>InterLog.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\LoginLog.aspx.resx">
+      <DependentUpon>LoginLog.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\OperateLog.aspx.resx">
+      <DependentUpon>OperateLog.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\ClientServer.asmx.resx">
+      <DependentUpon>ClientServer.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\WebServer.asmx.resx">
+      <DependentUpon>WebServer.asmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\XmlServer.aspx.resx">
+      <DependentUpon>XmlServer.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stat\DataStat.aspx.resx">
+      <DependentUpon>DataStat.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Equipment\Config\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3673/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
